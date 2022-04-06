@@ -2,12 +2,16 @@
   list-style-type: none;
   box-sizing: border-box;
 }
+
+body {
+  background-color: black;
+}
 section {
   width: 1280px;
   height: 720px;
   margin: 0 auto;
   background-color: black;
-  font-family: sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   overflow: hidden;
 }
 .logo img {
@@ -25,20 +29,14 @@ section h1 {
 }
 
 .container {
+  display: flex;
   width: 700px;
   height: 239px;
   margin: 0 auto;
   margin-top: 0px;
-  display: flex;
-}
-figure {
-  display: flex;
   justify-content: space-between;
-  width: 700px;
-  height: 203px;
-  margin: 0 auto;
-  overflow: hidden;
 }
+
 .logins {
   width: 160px;
   height: 160px;
@@ -47,13 +45,13 @@ figure {
   overflow: hidden;
   border: 1px solid black;
   border-radius: 8px;
-  height: 159px;
+  height: 160px;
 }
 .login-icon:hover {
   overflow: hidden;
   border: 2.5px solid white;
   border-radius: 8px;
-  height: 159px;
+  height: 160px;
   background-color: #fff;
 }
 .login-icon img {
@@ -71,9 +69,10 @@ figure {
   transform: scale(1.3);
 }
 
-figcaption {
+span {
+  display: flex;
   color: #fff;
-  text-align: center;
+  justify-content: center;
   margin-top: 11px;
 }
 
@@ -87,6 +86,7 @@ button {
   border: 1px solid #fff;
   margin-top: 88px;
   margin-left: 535px;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 button:hover {
